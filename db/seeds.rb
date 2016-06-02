@@ -1,11 +1,11 @@
-Cocktail.destroy_all
-Ingredient.destroy_all
+# Cocktail.destroy_all
+# Ingredient.destroy_all
 
 
-6.times do
-  name = Faker::Hipster.words(2).join(" ")
-  Cocktail.create(name: name)
-end
+# 6.times do
+#   name = Faker::Hipster.words(2).join(" ")
+#   Cocktail.create(name: name)
+# end
 
 Ingredient.create(name: "Vodka")
 Ingredient.create(name: "Rum")
