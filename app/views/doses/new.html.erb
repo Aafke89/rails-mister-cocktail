@@ -1,0 +1,20 @@
+  <%# ingredients = [] %>
+  <%# @ingredients.each do |ingredient| %>
+      <%# ingredients << ingredient.name %>
+  <%# end %>
+
+
+<h2>Add a dose to <%= @cocktail.name %></h2>
+<div class="block">
+  <%= form_for [@cocktail, @dose] do |f| %>
+  <%= f.label :description %> <br>
+  <%= f.text_field :description, required: true %> <br> <br>
+  <%= f.label :ingredient %> <br>
+  <%#= f.select :ingredient, options_for_select(ingredients) %>
+  <%= f.collection_select :ingredient_id, Ingredient.all, :id, :name %>
+  <%= f.submit %> <br>
+  <% end %>
+</div>
+
+<%#= f.collection_select :ingredient_id, Ingredient.all, :id, :name %>
+

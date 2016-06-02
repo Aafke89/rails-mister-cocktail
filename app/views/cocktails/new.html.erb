@@ -1,0 +1,8 @@
+<h2>Make a new cocktail</h2>
+<div class="block">
+  <%= form_for [@cocktail] do |f| %>
+  <%= f.label :name %> <br>
+  <%= f.text_field :name, required: true %> <br> <br>
+  <%= f.submit %> <br>
+  <% end %>
+</div>

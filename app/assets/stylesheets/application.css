@@ -36,7 +36,7 @@ a:hover  {
 }
 
 .block_link {
-  background-color: rgba(20, 0, 20, 0.1);
+  /*background-color: rgba(20, 0, 20, 0.1);*/
   padding: 20px;
   margin: 20px auto;
   width: 400px;
