@@ -3,6 +3,8 @@
   <%= form_for [@cocktail] do |f| %>
   <%= f.label :name %> <br>
   <%= f.text_field :name, required: true %> <br> <br>
+  <%= f.file_field :image %>
+  <%= f.hidden_field :image_cache %> <br><br>
   <%= f.submit %> <br>
   <% end %>
 </div>

@@ -37,6 +37,8 @@ group :development, :test do
   gem 'byebug'
   gem 'faker'
   gem 'figaro'
+  gem 'cloudinary'
+  gem 'carrierwave'
 end
 
 group :development do
