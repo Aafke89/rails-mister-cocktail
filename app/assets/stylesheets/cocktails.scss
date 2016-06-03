@@ -2,6 +2,33 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.block-left {
+.block-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 40px;
+}
 
+
+.block-right {
+  flex: 1 0 400px;
+}
+
+.block-cocktail {
+  background-color: rgba(20, 0, 20, 0.1);
+  padding: 20px;
+  margin: 20px;
+  // width: 400px;
+  height: 260px;
+  text-align: left;
+}
+
+.block-left {
+  margin: 20px;
+}
+
+.block-right-down {
+  padding: 20px;
+  margin: 20px;
+  width: 400px;
+  text-align: left;
 }
